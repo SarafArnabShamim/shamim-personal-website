@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="Welcome to the personal website of Shamim.">
+  <title>SHAMIM | Personal Website</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #080808;
+      --card: #111111;
+      --white: #f5f5f5;
+      --muted: #999999;
+      --gold: #d7b878;
+      --border: #292929;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(ellipse at 50% 0%, #292115 0%, transparent 45%),
+        var(--bg);
+      color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 18px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 650px;
+      margin: auto;
+    }
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 65px;
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: 3px;
+    }
+
+    .status {
+      color: var(--gold);
+      letter-spacing: 1px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 25px 0 42px;
+    }
+
+    .avatar {
+      width: 112px;
+      height: 112px;
+      border: 1px solid var(--gold);
+      border-radius: 50%;
+      margin: 0 auto 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(145deg, #28231a, #101010);
+      color: var(--gold);
+      font-size: 38px;
+      font-weight: 300;
+      letter-spacing: 2px;
+      box-shadow: 0 0 35px #d7b87812;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      font-size: 10px;
+      letter-spacing: 5px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 10vw, 65px);
+      letter-spacing: 7px;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 14px;
+      letter-spacing: 1px;
+      line-height: 1.8;
+    }
+
+    .line {
+      width: 42px;
+      height: 2px;
+      background: var(--gold);
+      margin: 28px auto;
+    }
+
+    .about {
+      text-align: center;
+      margin-bottom: 38px;
+    }
+
+    .about h2 {
+      font-size: 12px;
+      letter-spacing: 4px;
+      margin-bottom: 13px;
+      color: var(--gold);
+    }
+
+    .about p {
+      font-size: 14px;
+      color: #b8b8b8;
+      line-height: 1.9;
+      max-width: 420px;
+      margin: auto;
+    }
+
+    .links-title {
+      font-size: 11px;
+      letter-spacing: 4px;
+      color: var(--muted);
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    .links {
+      display: grid;
+      gap: 12px;
+    }
+
+    .social {
+      min-height: 58px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: linear-gradient(110deg, #141414, #0d0d0d);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 19px;
+      color: var(--white);
+      text-decoration: none;
+      transition: 0.25s ease;
+    }
+
+    .social:hover {
+      border-color: var(--gold);
+      transform: translateY(-2px);
+      background: #19160f;
+    }
+
+    .social span:first-child {
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+
+    .arrow {
+      color: var(--gold);
+      font-size: 20px;
+    }
+
+    .quote {
+      margin-top: 40px;
+      text-align: center;
+      padding: 24px 10px;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      color: #c5bda9;
+      font-size: 13px;
+      line-height: 1.9;
+      font-style: italic;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 0 12px;
+      color: #666;
+      font-size: 10px;
+      letter-spacing: 2px;
+      line-height: 2;
+    }
+
+    footer strong {
+      color: var(--gold);
+      font-weight: 500;
+    }
+
+    @media (max-width: 400px) {
+      body {
+        padding: 18px 14px;
+      }
+
+      .top {
+        margin-bottom: 40px;
+        font-size: 9px;
+      }
+
+      h1 {
+        letter-spacing: 4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+
+    <header class="top">
+      <span>PERSONAL SPACE</span>
+      <span class="status">● ONLINE</span>
+    </header>
+
+    <section class="hero">
+      <div class="avatar">S</div>
+
+      <p class="eyebrow">WELCOME TO MY WORLD</p>
+
+      <h1>SHAMIM</h1>
+
+      <p class="subtitle">
+        Simple living. Real feelings. Silent ambitions.
+      </p>
+
+      <div class="line"></div>
+    </section>
+
+    <section class="about">
+      <h2>ABOUT ME</h2>
+      <p>
+        I believe in staying real, keeping my heart kind,
+        and letting my journey speak for itself.
+        This is my little corner of the internet.
+      </p>
+    </section>
+
+    <section>
+      <p class="links-title">CONNECT WITH ME</p>
+
+      <div class="links">
+        <!-- Replace # with your actual profile links -->
+
+        <a class="social" href="#" target="_blank" rel="noopener">
+          <span>Facebook</span>
+          <span class="arrow">↗</span>
+        </a>
+
+        <a class="social" href="#" target="_blank" rel="noopener">
+          <span>Instagram</span>
+          <span class="arrow">↗</span>
+        </a>
+
+        <a class="social" href="#" target="_blank" rel="noopener">
+          <span>WhatsApp</span>
+          <span class="arrow">↗</span>
+        </a>
+
+        <a class="social" href="#" target="_blank" rel="noopener">
+          <span>TikTok</span>
+          <span class="arrow">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <div class="quote">
+      “Not everyone needs to understand your journey.
+      Just keep moving forward.”
+    </div>
+
+    <footer>
+      MADE WITH PURPOSE<br>
+      © 2026 <strong>SHAMIM</strong> · ALL RIGHTS RESERVED
+    </footer>
+
+  </main>
+</body>
+</html>
