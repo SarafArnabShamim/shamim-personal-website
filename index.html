@@ -33,6 +33,8 @@ nav{display:flex;justify-content:space-between;align-items:center;
 }
 .logo:after{content:"";position:absolute;inset:-7px;border:1px solid #d9bb7840;border-radius:50%}
 .eyebrow{color:var(--gold);font-size:10px;letter-spacing:5px;margin-bottom:17px}
+  .logo{overflow:hidden}
+.logo img{width:100%;height:100%;object-fit:cover;border-radius:50%}
 h1{font-size:clamp(40px,11vw,68px);letter-spacing:8px;font-weight:700}
 .subtitle{color:#aaa;font-size:13px;letter-spacing:1.2px;margin-top:16px;line-height:1.8}
 .line{height:2px;width:42px;background:var(--gold);margin:29px auto 35px}
@@ -73,7 +75,8 @@ footer strong{color:var(--gold);font-weight:500}
 </nav>
 
 <section class="hero">
-  <div class="logo">S</div>
+  <div class="logo">
+  <img src="shamim.jpg" alt="SHAMIM">
   <p class="eyebrow">WELCOME TO MY WORLD</p>
   <h1>SHAMIM</h1>
   <p class="subtitle">A quiet soul. A strong heart. A unique journey.</p>
