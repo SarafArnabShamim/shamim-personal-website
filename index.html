@@ -79,6 +79,14 @@ nav {
   box-shadow: 0 0 0 8px #d9bb7808, 0 0 45px #d9bb7820;
   position: relative;
   overflow: hidden;
+
+  /* Golden Glow Animation */
+  animation: goldenGlow 2.5s ease-in-out infinite;
+  transition: transform 0.4s ease;
+}
+
+.logo:hover {
+  transform: scale(1.06);
 }
 
 .logo img {
@@ -170,7 +178,13 @@ h1 {
   border-radius: 9px;
   background: linear-gradient(110deg, #171612, #0d0d0c);
   transition: transform .25s, border-color .25s, background .25s;
+  animation: rise 0.8s ease both;
 }
+
+.link:nth-child(1) { animation-delay: .15s; }
+.link:nth-child(2) { animation-delay: .25s; }
+.link:nth-child(3) { animation-delay: .35s; }
+.link:nth-child(4) { animation-delay: .45s; }
 
 .link:hover {
   transform: translateY(-3px);
@@ -235,6 +249,25 @@ footer strong {
   font-weight: 500;
 }
 
+/* Golden Glow Effect */
+@keyframes goldenGlow {
+  0%, 100% {
+    box-shadow:
+      0 0 0 5px rgba(217, 187, 120, 0.04),
+      0 0 15px rgba(217, 187, 120, 0.25),
+      0 0 30px rgba(217, 187, 120, 0.15);
+    border-color: #b8944d;
+  }
+
+  50% {
+    box-shadow:
+      0 0 0 8px rgba(217, 187, 120, 0.10),
+      0 0 30px rgba(255, 215, 120, 0.65),
+      0 0 55px rgba(217, 187, 120, 0.40);
+    border-color: #ffe0a0;
+  }
+}
+
 @keyframes rise {
   from {
     opacity: 0;
@@ -247,7 +280,9 @@ footer strong {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * {
+  *,
+  *::before,
+  *::after {
     animation: none !important;
     scroll-behavior: auto !important;
     transition: none !important;
@@ -279,20 +314,18 @@ footer strong {
   </nav>
 
   <section class="hero">
-
     <div class="logo">
-      <img src="./IMG_20261008_051033.jpg" alt="SHAMIM"
-           onerror="this.style.display='none'">
+      <img src="./IMG_20261008_051033.jpg" alt="SHAMIM">
     </div>
 
     <p class="eyebrow">WELCOME TO MY WORLD</p>
     <h1>SHAMIM</h1>
+
     <p class="subtitle">
       A quiet soul. A strong heart. A unique journey.
     </p>
 
     <div class="line"></div>
-
   </section>
 
   <section class="about">
